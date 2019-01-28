@@ -37,6 +37,7 @@ for i in range(num_robots):
 	# print i
 #lla_data = {"id":1,"data":{"lat":37.46832, "lon":-84.2317047,"alt":311.3}}
 data_paras = {"positions":goal}
+print data_paras
 # data_paras = {"positions":[{"id":0, "MovArgs":{"speed":10, "distThresh":1.0}, "X":309.29, "Y":354, "Z":-107},{"id":1, "MovArgs":{"speed":5, "distThresh":1.0},"X":406,  "Y":354, "Z":-230}, {"id":2, "MovArgs":{"speed":20, "distThresh":1.0},  "X":358,  "Y":374,  "Z":-351}]}
 	# print(data)
 set_req = requests.post(url = set_URL, data = data_paras)
