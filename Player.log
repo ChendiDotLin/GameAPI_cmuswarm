@@ -1,0 +1,171 @@
+Desktop is 1920 x 1080 @ 60 Hz
+Initialize engine version: 2018.2.1f1 (1a9968d9f99c)
+Renderer: SVGA3D; build: RELEASE;  LLVM;
+Vendor:   VMware, Inc.
+Version:  3.3 (Core Profile) Mesa 18.0.5
+GLES:     0
+ GL_AMD_conservative_depth GL_AMD_shader_trinary_minmax GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_blend_func_extended GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_occlusion_query2 GL_
+ARB_pixel_buffer_object GL_ARB_point_sprite GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_robustness GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shader_objects GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_sync GL_ARB_texture_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_binding GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_draw_buffers
+2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_provoking_vertex GL_EXT_shader_integer_mix GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_IBM_multimode_draw_arrays GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_conditional_render GL_NV_depth_clamp GL_NV_packed_depth_stencil GL_OES_EGL_image GL_S3_s3tc
+OPENGL LOG: Creating OpenGL 3.3 graphics device ; Context level  <OpenGL 3.3> ; Context handle 57047968
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.213 seconds
+Default vsync count 1
+requesting resize 1024 x 768
+resizing window to 1024 x 768
+Desktop is 1920 x 1080 @ 60 Hz
+WARNING: RGB Compressed BC6H UFloat format is not supported, decompressing texture
+Failed setting thread niceness (priority) to 0 due to EACCES (errno 13) violation. Lowering niceness (raising priority) requires CAP_SYS_NICE or superuser.
+ 
+(Filename: ./PlatformDependent/Linux/PlatformThread.cpp Line: 131)
+
+UnloadTime: 5.525000 ms
+20
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Interactions\MainMenu.cs:27)
+ 
+(Filename: S Line: 0)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 7f3652baa700 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.919000 ms
+System memory in use before: 12.6 MB.
+System memory in use after: 12.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 481.
+Total: 1.670000 ms (FindLiveObjects: 0.932000 ms CreateObjectMapping: 0.058000 ms MarkObjects: 0.501000 ms  DeleteObjects: 0.176000 ms)
+
+3
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MainMenu:Start() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Interactions\MainMenu.cs:27)
+ 
+(Filename: S Line: 0)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at MainMenu.Start () [0x0001c] in S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Interactions\MainMenu.cs:29 
+ 
+(Filename: S Line: 0)
+
+WARNING: RGB Compressed BC6H UFloat format is not supported, decompressing texture
+WARNING: Shader Unsupported: 'Unlit/PointCloudVoxel' - Pass '' has no vertex shader
+ERROR: Shader Shader is not supported on this GPU (none of subshaders/fallbacks are suitable)WARNING: Shader Unsupported: 'Unlit/PointCloudVoxel' - Setting to default shader.
+xform Length 3
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+RaycastLidarManager:Awake() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Sensors\RaycastLIDAR\RaycastLidarManager.cs:152)
+UnityEngine.Object:Internal_CloneSingle(Object)
+UnityEngine.Object:Instantiate(GameObject) (at /home/builduser/buildslave/unity/build/Runtime/Export/UnityEngineObject.bindings.cs:275)
+AgentSpawn:Awake() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Scripts\AgentSpawn.cs:24)
+ 
+(Filename: S Line: 0)
+
+JPSManager Start
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Pathfinding.JPSComponentManager:Start() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Scripts\PseudoJPS\JPSComponentManager.cs:52)
+ 
+(Filename: S Line: 0)
+
+Oct Manager start
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+OctreeExploreManager:Start() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Scripts\ConcurrentOctree\OctreeExploreManager.cs:52)
+ 
+(Filename: S Line: 0)
+
+16777217
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+OctreeExploreManager:Start() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Scripts\ConcurrentOctree\OctreeExploreManager.cs:64)
+ 
+(Filename: S Line: 0)
+
+WARNING: RGB Compressed BC6H UFloat format is not supported, decompressing texture
+Exception: VehicleModule::UpdatePosition(): Unable to bind to type: VehicleAPI.Data.PosXYZGroup
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+VehicleAPI.VehicleModule:UpdatePositionXYZGroup() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Api\VehicleModule\VehicleModulePositions.cs:229)
+VehicleAPI.VehicleModule:<VehicleModule>m__F(Object) (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Api\VehicleModule\VehicleModule.cs:50)
+System.Object:CallSite.Target(Closure, CallSite, Func`2, Object)
+Nancy.Routing.<>c__DisplayClass4:<Wrap>b__3(Object, CancellationToken)
+Nancy.Routing.Route:Invoke(DynamicDictionary, CancellationToken)
+Nancy.Routing.DefaultRouteInvoker:Invoke(Route, CancellationToken, DynamicDictionary, NancyContext)
+Nancy.Routing.<>c__DisplayClass2:<Dispatch>b__0(Task`1)
+Nancy.Helpers.TaskHelpers:WhenCompleted(Task`1, Action`1, Action`1, Boolean)
+Nancy.Routing.DefaultRequestDispatcher:Dispatch(NancyContext, CancellationToken)
+Nancy.<>c__DisplayClasse:<InvokeRequestLifeCycle>b__c(Task`1)
+Nancy.Helpers.TaskHelpers:WhenCompleted(Task`1, Action`1, Action`1, Boolean)
+Nancy.NancyEngine:InvokeRequestLifeCycle(NancyContext, CancellationToken, IPipelines)
+Nancy.NancyEngine:HandleRequest(Request, Func`2, CancellationToken)
+Nancy.NancyEngineExtensions:HandleRequest(INancyEngine, Request, Func`2)
+Nancy.NancyEngineExtensions:HandleRequest(INancyEngine, Request)
+Nancy.Hosting.Self.NancyHost:Process(HttpListenerContext)
+Nancy.Hosting.Self.NancyHost:GotCallback(IAsyncResult)
+System.Net.ListenerAsyncResult:InvokeCallback(Object)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+ 
+(Filename: S Line: 0)
+
+Exception: VehicleModule::UpdatePosition(): Unable to bind to type: VehicleAPI.Data.PosXYZGroup
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+VehicleAPI.VehicleModule:UpdatePositionXYZGroup() (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Api\VehicleModule\VehicleModulePositions.cs:229)
+VehicleAPI.VehicleModule:<VehicleModule>m__F(Object) (at S:\UnityProjects\Offset\GameEnv-NoRos\Assets\Api\VehicleModule\VehicleModule.cs:50)
+System.Object:CallSite.Target(Closure, CallSite, Func`2, Object)
+Nancy.Routing.<>c__DisplayClass4:<Wrap>b__3(Object, CancellationToken)
+Nancy.Routing.Route:Invoke(DynamicDictionary, CancellationToken)
+Nancy.Routing.DefaultRouteInvoker:Invoke(Route, CancellationToken, DynamicDictionary, NancyContext)
+Nancy.Routing.<>c__DisplayClass2:<Dispatch>b__0(Task`1)
+Nancy.Helpers.TaskHelpers:WhenCompleted(Task`1, Action`1, Action`1, Boolean)
+Nancy.Routing.DefaultRequestDispatcher:Dispatch(NancyContext, CancellationToken)
+Nancy.<>c__DisplayClasse:<InvokeRequestLifeCycle>b__c(Task`1)
+Nancy.Helpers.TaskHelpers:WhenCompleted(Task`1, Action`1, Action`1, Boolean)
+Nancy.NancyEngine:InvokeRequestLifeCycle(NancyContext, CancellationToken, IPipelines)
+Nancy.NancyEngine:HandleRequest(Request, Func`2, CancellationToken)
+Nancy.NancyEngineExtensions:HandleRequest(INancyEngine, Request, Func`2)
+Nancy.NancyEngineExtensions:HandleRequest(INancyEngine, Request)
+Nancy.Hosting.Self.NancyHost:Process(HttpListenerContext)
+Nancy.Hosting.Self.NancyHost:GotCallback(IAsyncResult)
+System.Net.ListenerAsyncResult:InvokeCallback(Object)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+System.Threading.ThreadPoolWorkQueue:Dispatch()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback()
+ 
+(Filename: S Line: 0)
+
+Receiving unhandled NULL exception
+#0  0x007f36a233eac0 in funlockfile
+#1  0x007ffe59e0c1c8 in JobBatchDispatcher::KickJobs()
+#2  0x007ffe59e0c1d0 in PhysicsManager::SyncBatchQueries() [clone .part.177]
+#3  0x007ffe59e0c1f0 in BoxCollider::MainThreadCleanup()
+#4  0x007ffe59e0c200 in delete_object_internal_step1(Object*)
+#5  0x007ffe59e0c220 in CommitBatchDelete(BatchDelete&)
+#6  0x007ffe59e0c240 in DestroyGameObjectHierarchy(GameObject&)
+#7  0x007ffe59e0ca80 in DestroyObjectHighLevel(Object*, bool)
+#8  0x007ffe59e0cb90 in CleanupAllObjects()
+#9  0x007ffe59e0cc70 in CleanupEngine()
+#10 0x007ffe59e0cc80 in PlayerCleanup(bool)
+#11 0x007ffe59e0cca0 in main
+#12 0x007ffe59e0d2a0 in __libc_start_main
+#13 0x007ffe59e0d360 in _start
