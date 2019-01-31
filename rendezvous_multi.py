@@ -30,13 +30,14 @@ centroid = sum(np.array(positions))/num_robots
 set_URL = "http://localhost:1234/Vehicle/Position/XYZ/Multi"
 goal = []
 for i in range(num_robots):
-	goal.append({"id":i,"MovArgs":{"speed":10,"distThresh":1.0},"X":centroid[0],"Y":centroid[1],"Z":centroid[2]})
+	goal.append({"id":i,"x":centroid[0],"y":centroid[1],"z":centroid[2]})
+	# goal.append({"id":i,"MovArgs":{"speed":10,"distThresh":1.0},"x":centroid[0],"y":centroid[1],"z":centroid[2]})
 
 # xyz_data = {"id":0,"x":45.500, "y":72.3000,"z":10.000}
 	# data = {"id":i,"x":centroid[0], "y":centroid[1],"z":centroid[2]}
 	# print i
 #lla_data = {"id":1,"data":{"lat":37.46832, "lon":-84.2317047,"alt":311.3}}
-data_paras = {"positions":goal}
+data_paras = {"positions":goal,"MovArgs":{"speed":10,"distThresh":1.0},}
 print data_paras
 # data_paras = {"positions":[{"id":0, "MovArgs":{"speed":10, "distThresh":1.0}, "X":309.29, "Y":354, "Z":-107},{"id":1, "MovArgs":{"speed":5, "distThresh":1.0},"X":406,  "Y":354, "Z":-230}, {"id":2, "MovArgs":{"speed":20, "distThresh":1.0},  "X":358,  "Y":374,  "Z":-351}]}
 	# print(data)
