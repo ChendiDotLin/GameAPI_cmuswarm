@@ -33,7 +33,7 @@ for i in range(num_robots):
 	# goal.append({"id":i,"MovArgs":{"speed":10,"distThresh":1.0},"X":centroid[0],"Y":centroid[1],"Z":centroid[2]})
 
 # xyz_data = {"id":0,"x":45.500, "y":72.3000,"z":10.000}
-	data = {"id":i,"x":centroid[0], "y":centroid[1],"z":centroid[2]}
+	data = {"id":i,"x":centroid[0], "y":centroid[1],"z":centroid[2],"MovArgs":{"speed":10, "distThresh":1.0}}
 	print i
 #lla_data = {"id":1,"data":{"lat":37.46832, "lon":-84.2317047,"alt":311.3}}
 # data_paras = {"positions":goal}
