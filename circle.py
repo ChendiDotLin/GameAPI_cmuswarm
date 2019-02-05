@@ -34,7 +34,7 @@ for i in range(num_robots):
 
 # xyz_data = {"id":0,"x":45.500, "y":72.3000,"z":10.000}
 	# data = {"id":i,"x":centroid[0], "y":centroid[1],"z":centroid[2],"MovArgs":{"speed":10, "distThresh":0.0}}
-	data = {"id":i,"x":30+radius*np.cos(pie*i), "y":30+radius*np.sin(pie*i),"z":40,"MovArgs":{"speed":10, "distThresh":0.0}}
+	data = {"id":i,"x":30+radius*np.cos(pie*i), "y":40,"z":30+radius*np.sin(pie*i),"MovArgs":{"speed":10, "distThresh":0.0}}
 
 	print i
 #lla_data = {"id":1,"data":{"lat":37.46832, "lon":-84.2317047,"alt":311.3}}
