@@ -32,6 +32,12 @@ set_URL = "http://localhost:1234/Vehicle/Position/XYZ/Multi"
 goal = []
 for i in range(num_robots):
 	goal.append({"id":i,"x":22,"y":33,"z":44})
+	# a = '{"id":'+str(i)+',"x":22,"y":33,"z":44}'
+	# print(type(a))
+	# print(a)
+	# b = json.loads(a)
+	# goal.append(b)
+
 	# goal.append({"id":i,"data":{"lat":37,"lon":-84,"alt":270}})
 	# goal.append({"id":i,"MovArgs":{"speed":10,"distThresh":1.0},"x":centroid[0],"y":centroid[1],"z":centroid[2]})
 
@@ -39,15 +45,20 @@ for i in range(num_robots):
 	# data = {"id":i,"x":centroid[0], "y":centroid[1],"z":centroid[2]}
 	# print i
 #lla_data = {"id":1,"data":{"lat":37.46832, "lon":-84.2317047,"alt":311.3}}
+# goal = '[{"id:0","x":22,"y":33,"z":44},{"id:1","x":22,"y":33,"z":44},{"id:2","x":22,"y":33,"z":44}]'
+# goaly = json.loads("goal")
+
 margs = {"speed":1, "distThresh":1}
 data_paras = {"positions":goal,"MovArgs":margs}
-print(data_paras["positions"][0])
-print(data_paras["MovArgs"])
+# data_paras = json.dumps(data_paras)
+# print(data_paras["positions"][0])
+# print(data_paras["MovArgs"])
 print (data_paras)
+print(type(data_paras))
 # data_paras = json.dumps(data_paras)
 # data_paras = {"positions":[{"id":0, "MovArgs":{"speed":10, "distThresh":1.0}, "X":309.29, "Y":354, "Z":-107},{"id":1, "MovArgs":{"speed":5, "distThresh":1.0},"X":406,  "Y":354, "Z":-230}, {"id":2, "MovArgs":{"speed":20, "distThresh":1.0},  "X":358,  "Y":374,  "Z":-351}]}
 	# print(data)
-set_req = requests.post(url = set_URL, data = data_paras)
+set_req = requests.request("POST",url = set_URL, json = data_paras)
 print (set_req.status_code,'\n',set_req.reason)
 	# set_req = requests.post(url = set_URL, data = data)
 	# print set_req.status_code,'\n',set_req.reason
