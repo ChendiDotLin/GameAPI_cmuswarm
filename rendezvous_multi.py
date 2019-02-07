@@ -31,7 +31,7 @@ set_URL = "http://localhost:1234/Vehicle/Position/XYZ/Multi"
 # set_URL = "http://localhost:1234/Vehicle/Position/LLA/Multi"
 goal = []
 for i in range(num_robots):
-	goal.append({"id":i,"x":22,"y":33,"z":44})
+	goal.append({"id":i,"x":centroid[0],"y":centroid[1],"z":centroid[2]})
 	# a = '{"id":'+str(i)+',"x":22,"y":33,"z":44}'
 	# print(type(a))
 	# print(a)
