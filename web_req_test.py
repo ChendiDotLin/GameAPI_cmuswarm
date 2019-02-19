@@ -24,7 +24,7 @@ print(num_robot)
 
 #     set_req = requests.post(url = set_URL, data = xyz_data)
 
-set_URL = "http://localhost:1234/Vehicle/Position/AddVelocity"
+set_URL = "http://localhost:1234/Vehicle/AddVelocity"
 data = {"id":0,"x":0.3,"y":0.2,"z":0.3}
 set_req = requests.request("POST",url = set_URL, data = data)
 
