@@ -59,7 +59,7 @@ print(type(data_paras))
 set_req = requests.request("POST",url = set_URL, json = data_paras)
 print (set_req.status_code,'\n',set_req.reason)
 
-time.sleep(30)
+time.sleep(2)
 
 get_req = requests.get(url=get_URL)
 
@@ -97,6 +97,7 @@ for i in range(num_robots):
 # margs = {"speed":1, "distThresh":1}
 data_paras = {"positions":goal,"MovArgs":margs}
 set_req = requests.request("POST",url = set_URL, json = data_paras)
-
+time.sleep(1)
+set_req = requests.request("POST",url = set_URL, json = data_paras)
 print(data_paras)
 print (set_req.status_code,'\n',set_req.reason)
