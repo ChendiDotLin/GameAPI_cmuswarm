@@ -22,6 +22,7 @@ for i in range(num_robots):
 	positions.append([p_data[i][u'x'],p_data[i][u'y'],p_data[i][u'z']])
 centroid = sum(np.array(positions))/num_robots
 
+connectivity_radius = 10
 
 
 
@@ -34,7 +35,7 @@ goal = []
 dt = 2
 t = 0
 
-while (t < 20):
+while (t <40):
 	goal = []
 
 	get_req = requests.get(url=get_URL)
@@ -53,11 +54,19 @@ while (t < 20):
 
 	for i in range(num_robots):
 		positions = []
+		n = 0
+		i_pos = np.array([p_data[i][u'x'],p_data[i][u'y'],p_data[i][u'z']])
 		for j in range(num_robots):
 			if (j!=i):
-				positions.append([p_data[i][u'x'],p_data[i][u'y'],p_data[i][u'z']])
-		centroid = sum(np.array(positions))/(num_robots-1)
-
+				j_pos = np.array([p_data[j][u'x'],p_data[j][u'y'],p_data[j][u'z']])
+				if (np.linalg.norm(i_pos - j_pos) < connectivity_radius):
+					positions.append(j_pos)
+					n = n + 1
+		if (n!=0):
+			centroid = sum(np.array(positions))/n
+		else:
+			centrod = i_pos
+		print(centroid)
 		goal.append({"id":i,"x":centroid[0],"y":centroid[1],"z":centroid[2]})
 		# a = '{"id":'+str(i)+',"x":22,"y":33,"z":44}'
 		# print(type(a))
@@ -75,7 +84,7 @@ while (t < 20):
 	# goal = '[{"id:0","x":22,"y":33,"z":44},{"id:1","x":22,"y":33,"z":44},{"id:2","x":22,"y":33,"z":44}]'
 	# goaly = json.loads("goal")
 
-	margs = {"speed":10, "distThresh":1}
+	margs = {"speed":0.1, "distThresh":1}
 	data_paras = {"positions":goal,"MovArgs":margs}
 	# data_paras = json.dumps(data_paras)
 	# print(data_paras["positions"][0])
@@ -86,7 +95,9 @@ while (t < 20):
 	# data_paras = {"positions":[{"id":0, "MovArgs":{"speed":10, "distThresh":1.0}, "X":309.29, "Y":354, "Z":-107},{"id":1, "MovArgs":{"speed":5, "distThresh":1.0},"X":406,  "Y":354, "Z":-230}, {"id":2, "MovArgs":{"speed":20, "distThresh":1.0},  "X":358,  "Y":374,  "Z":-351}]}
 		# print(data)
 	set_req = requests.request("POST",url = set_URL, json = data_paras)
+
 	time.sleep(dt)
+
 	set_req = requests.request("POST",url = set_URL, json = data_paras)
 
 	print (set_req.status_code,'\n',set_req.reason)
